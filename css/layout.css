@@ -17,27 +17,27 @@ body {
 
 .left {
     grid-area: a;
-    background-color: #f2f2f2;
+    background-color: #801336;
 }
 
 .header {
     grid-area: b;
-    background-color: #f2f2f2;
+    background-color: #2d142c;
 }
 
 .main {
     grid-area: c;
-    background-color: #f2f2f2;
+    background-color: #2d142c;
 }
 
 .right {
     grid-area: d;
-    background-color: #f2f2f2;
+    background-color: #801336;
 }
 
 .footer {
     grid-area: e;
-    background-color: #f2f2f2;
+    background-color: #2d142c;
 }
 
 /* Extra maži įrenginiai (telefonai, 600px ir žemiau) */
@@ -47,7 +47,7 @@ body {
         height: 200%;
         grid-template-rows: 50px auto 50px;
         grid-template-columns: 3fr;
-        grid-gap: 15px;
+        /*grid-gap: 15px;*/
         grid-template-areas:
         'b'
         'c'
@@ -68,7 +68,7 @@ body {
         height: 200%;
         grid-template-rows: 2fr 3fr auto 1fr 1fr;
         grid-template-columns: 100%;
-        grid-gap: 15px;
+        /*grid-gap: 15px;*/
         grid-template-areas:
         'b'
         'a'
@@ -88,7 +88,7 @@ body {
         height: 100%;
         grid-template-rows: 2fr auto 1fr 1fr;
         grid-template-columns: 1fr 5fr;
-        grid-gap: 15px;
+        /*grid-gap: 15px;*/
         grid-template-areas:
         'a b'
         'a c'
@@ -105,7 +105,7 @@ body {
         width: 100%;
         grid-template-rows: 1fr auto auto 1fr;
         grid-template-columns: 1fr 6fr 1fr;
-        grid-gap: 15px;
+        /*grid-gap: 15px;*/
         grid-template-areas:
         'a b d'
         'a c d'
@@ -124,10 +124,27 @@ body {
         height: 100%;
         grid-template-rows: 10% auto 8%;
         grid-template-columns: 15% auto 15%;
-        grid-gap: 25px;
+        /*grid-gap: 25px;*/
         grid-template-areas:
         'b b b'
         'a c d'
         'a e e';
     }
+}
+
+
+.navbar a {
+    float: left;
+    font-family: "Montserrat", sans-serif;
+    font-size: 15px;
+    color: #ee4540;
+    text-align: center;
+    padding: 30px;
+    text-transform: uppercase;
+    font-weight: 30;
+    text-decoration: none;
+}
+
+.navbar a news:hover {
+    color: #801336;
 }
